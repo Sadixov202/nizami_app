@@ -1,0 +1,500 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  background-image: linear-gradient(30deg, #0070aa 0%, #03a8fd 100%); }
+  body a {
+    text-decoration: none; }
+
+.circle {
+  margin-top: 66px; }
+  .circle .play {
+    margin: auto;
+    width: 155px;
+    height: 155px;
+    border-radius: 77px;
+    background-color: rgba(255, 255, 255, 0.94902);
+    border: 4px solid #ffbb03; }
+    .circle .play i {
+      font-size: 100px;
+      letter-spacing: -2px;
+      color: #ffbc03;
+      margin-top: 24px; }
+  .circle .cancel {
+    margin: auto;
+    width: 155px;
+    height: 155px;
+    border-radius: 77px;
+    background-color: rgba(255, 255, 255, 0.94902);
+    border: 4px solid #ed6262;
+    text-align: center; }
+    .circle .cancel i {
+      font-size: 100px;
+      letter-spacing: -2px;
+      color: #ee6262;
+      margin-top: 24px; }
+  .circle .title {
+    margin-top: 42px;
+    margin-bottom: 52px; }
+    .circle .title p {
+      font-size: 24px;
+      letter-spacing: 0px;
+      color: #f7f7f7;
+      font-family: "dinpro-Regular"; }
+
+.h-100 {
+  height: 100% !important; }
+
+.nova-logo {
+  width: 38px; }
+
+header {
+  box-shadow: 0px 6px 0px rgba(34, 34, 34, 0.1);
+  background-color: #ffffff;
+  height: 50px; }
+  header .title {
+    margin-top: 16px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #385380;
+    font-family: "dinpro-Bold"; }
+  header .off-icon {
+    float: right; }
+    header .off-icon i {
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #385380; }
+  header .back-icon {
+    float: left; }
+    header .back-icon i {
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #385380; }
+
+@font-face {
+  font-family: "dinpro-Regular";
+  src: url("../fonts/DINPro.ttf"); }
+@font-face {
+  font-family: "dinpro-Bold";
+  src: url("../fonts/DINPro-Bold.ttf"); }
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+option {
+  font-family: "dinpro-Regular";
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #385380; }
+
+option:disabled {
+  color: #385380; }
+
+.index {
+  height: 100vh; }
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.log-page {
+  height: 100vh; }
+  .log-page .niz-logo img {
+    margin-top: 74px;
+    margin-bottom: 54px;
+    width: 120px; }
+  .log-page form {
+    position: relative; }
+  .log-page .c-control {
+    font-family: "dinpro-Regular";
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 54px;
+    margin-bottom: 8px;
+    border: none;
+    outline: none; }
+  .log-page i {
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: #385380;
+    pointer-events: none; }
+  .log-page i.lock {
+    top: 84px; }
+  .log-page i.down {
+    left: 86%; }
+  .log-page .c-pass {
+    height: 60px;
+    border-radius: 5px;
+    box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+    background-color: #ffffff;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding-left: 54px;
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #385380;
+    font-family: "dinpro-Regular";
+    margin-bottom: 44px; }
+
+button {
+  border-radius: 30px;
+  box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #385380;
+  font-family: "dinpro-Bold";
+  padding: 20px 32px; }
+
+.logo-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+  .logo-bottom img {
+    width: 38px; }
+
+.content {
+  margin-top: 14px; }
+
+.hover {
+  text-decoration: none !important; }
+  .hover:hover .item-s {
+    background-color: #d8d8d8; }
+  .hover .item-s {
+    padding: 10px 12px;
+    border-radius: 3px;
+    box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+    background-color: #ffffff;
+    transition: all .4s ease-in-out;
+    margin-bottom: 6px; }
+    .hover .item-s .seans {
+      font-size: 18px;
+      letter-spacing: 0px;
+      color: #385380;
+      font-family: "dinpro-Bold";
+      margin-bottom: 5px; }
+    .hover .item-s .lang {
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #999999;
+      font-family: "dinpro-Regular"; }
+    .hover .item-s .date {
+      font-size: 14px;
+      letter-spacing: 0px;
+      color: #385380;
+      font-family: "dinpro-Bold";
+      margin-bottom: 8px; }
+    .hover .item-s .time {
+      margin-bottom: 8px; }
+      .hover .item-s .time span {
+        font-size: 16px;
+        font-family: "dinpro-Bold";
+        letter-spacing: 0px;
+        color: #385380;
+        border-radius: 5px;
+        background-color: transparent;
+        border: 2px solid #37537f;
+        padding: 2px; }
+    .hover .item-s .zal {
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #999999;
+      font-family: "dinpro-Bold"; }
+
+.seans-detal {
+  margin-bottom: 23px; }
+
+.margin-b40 {
+  margin-bottom: 40px; }
+
+.item {
+  height: 252px;
+  border-radius: 3px;
+  box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+  background-color: #ffffff;
+  margin-top: 32px;
+  padding: 0 16px; }
+  .item .title p {
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #385380;
+    font-family: "dinpro-Bold";
+    padding: 22px 0; }
+  .item .seans_info {
+    border-bottom: 1px solid #38537f;
+    margin-bottom: 16px; }
+    .item .seans_info p {
+      font-size: 18px;
+      letter-spacing: 0px;
+      color: #385380;
+      font-family: "dinpro-Bold";
+      margin-bottom: 16px; }
+      .item .seans_info p span {
+        float: right; }
+
+.info {
+  margin-top: 42px;
+  border-radius: 3px;
+  box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+  background-color: #ffffff;
+  padding: 42px 0;
+  margin-bottom: 100px; }
+  .info ul {
+    list-style: none; }
+    .info ul li {
+      font-family: "dinpro-Bold";
+      font-size: 20px;
+      letter-spacing: 0px;
+      color: #666666;
+      margin-bottom: 8px; }
+      .info ul li span {
+        font-family: "dinpro-Regular"; }
+
+.ticket {
+  margin-top: 18px;
+  background-color: #ffffff;
+  padding: 8px 8px 16px 8px;
+  border-radius: 5px;
+  position: relative; }
+  .ticket .back {
+    background-image: url(../img/border.png), url(../img/border.png);
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+    width: 100%;
+    height: 102.3%;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    background-size: contain;
+    opacity: 1; }
+  .ticket .n-logo {
+    text-align: center;
+    margin-bottom: 10px; }
+    .ticket .n-logo:after {
+      position: absolute;
+      content: "";
+      width: 83px;
+      right: 42px;
+      height: 1px;
+      top: 34px;
+      background-color: #000000; }
+    .ticket .n-logo::before {
+      position: absolute;
+      content: "";
+      width: 83px;
+      left: 42px;
+      height: 1px;
+      top: 34px;
+      background-color: #000000; }
+    .ticket .n-logo img {
+      width: 52px; }
+  .ticket .bar_code {
+    border-bottom: 1px solid #000000; }
+    .ticket .bar_code img {
+      width: 46px;
+      margin-bottom: 10px; }
+  .ticket .film_info {
+    margin-top: 12px;
+    padding: 0px 50px; }
+    .ticket .film_info .tick_num {
+      font-size: 14px;
+      color: black;
+      font-family: "dinpro-Regular";
+      margin-bottom: 12px; }
+      .ticket .film_info .tick_num span {
+        margin-left: 2px; }
+    .ticket .film_info .film {
+      font-size: 16px;
+      color: black;
+      font-family: "dinpro-Bold";
+      margin-bottom: 16px; }
+    .ticket .film_info .time {
+      font-size: 14px;
+      color: black;
+      font-family: "dinpro-Regular";
+      margin-bottom: 8px; }
+      .ticket .film_info .time span {
+        margin-left: 2px; }
+    .ticket .film_info .place {
+      font-size: 14px;
+      color: black;
+      font-family: "dinpro-Regular";
+      margin-bottom: 2px; }
+      .ticket .film_info .place span {
+        margin-left: 4px;
+        margin-right: 4px; }
+    .ticket .film_info .date {
+      font-size: 14px;
+      color: black;
+      font-family: "dinpro-Regular";
+      margin-bottom: 8px; }
+      .ticket .film_info .date span {
+        margin-left: 2px; }
+    .ticket .film_info .price {
+      font-family: "dinpro-Bold";
+      color: black;
+      margin-bottom: 10px; }
+      .ticket .film_info .price span {
+        font-size: 30px;
+        line-height: 36px;
+        color: black; }
+    .ticket .film_info .adress {
+      font-size: 14px;
+      color: black;
+      font-family: "dinpro-Regular";
+      margin-bottom: 2px; }
+      .ticket .film_info .adress span {
+        margin-left: 2px; }
+    .ticket .film_info .number {
+      font-size: 10px;
+      color: black;
+      font-family: "dinpro-Regular"; }
+
+.test .title {
+  margin-top: 40px;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: white;
+  font-family: "dinpro-Bold";
+  margin-bottom: 10px; }
+
+.first {
+  margin-bottom: 100px; }
+
+.scan_et {
+  background-color: #fdbb03;
+  color: white; }
+
+.myPinCode {
+  margin-bottom: 26px; }
+  .myPinCode input {
+    width: 37px;
+    height: 42px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+    background-color: rgba(255, 255, 255, 0.14902);
+    border: 2px solid #e5e5e5;
+    font-size: 24px;
+    letter-spacing: 0px;
+    font-family: "dinpro-Bold";
+    color: white; }
+
+.list {
+  margin-top: 180px;
+  height: 100vh; }
+  .list li {
+    margin-bottom: 22px; }
+  .list a {
+    text-decoration: none;
+    font-size: 36px;
+    letter-spacing: 0px;
+    color: #385380;
+    font-family: "dinpro-Bold"; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,597 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-image: linear-gradient(30deg, #0070aa 0%, #03a8fd 100%);
+    a {
+        text-decoration: none;
+    }
+}
+
+.circle {
+    margin-top: 66px;
+    .play {
+        margin: auto;
+        width: 155px;
+        height: 155px;
+        border-radius: 77px;
+        background-color: rgba(255, 255, 255, 0.9490196078431372);
+        border: 4px solid #ffbb03;
+        i {
+            font-size: 100px;
+            letter-spacing: -2px;
+            color: rgb(255, 188, 3);
+            margin-top: 24px;
+        }
+    }
+    .cancel {
+        margin: auto;
+        width: 155px;
+        height: 155px;
+        border-radius: 77px;
+        background-color: rgba(255, 255, 255, 0.9490196078431372);
+        border: 4px solid #ed6262;
+        text-align: center;
+        i {
+            font-size: 100px;
+            letter-spacing: -2px;
+            color: rgb(238, 98, 98);
+            margin-top: 24px;
+        }
+    }
+    .title {
+        margin-top: 42px;
+        margin-bottom: 52px;
+        p {
+            font-size: 24px;
+            letter-spacing: 0px;
+            color: rgb(247, 247, 247);
+            font-family: "dinpro-Regular";
+        }
+    }
+}
+
+.h-100 {
+    height: 100% !important
+}
+
+.nova-logo {
+    width: 38px;
+}
+
+header {
+    box-shadow: 0px 6px 0px rgba(34, 34, 34, 0.1);
+    background-color: #ffffff;
+    height: 50px;
+    .title {
+        margin-top: 16px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: rgb(56, 83, 128);
+        font-family: "dinpro-Bold";
+    }
+    .off-icon {
+        float: right;
+        i {
+            font-size: 20px;
+            letter-spacing: 0px;
+            color: rgb(56, 83, 128);
+        }
+    }
+    .back-icon {
+        float: left;
+        i {
+            font-size: 20px;
+            letter-spacing: 0px;
+            color: rgb(56, 83, 128);
+        }
+    }
+}
+
+@font-face {
+    font-family: "dinpro-Regular";
+    src: url("../fonts/DINPro.ttf");
+}
+
+@font-face {
+    font-family: "dinpro-Bold";
+    src: url("../fonts/DINPro-Bold.ttf");
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+option {
+    font-family: "dinpro-Regular";
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #385380;
+}
+
+option:disabled {
+    color: #385380;
+}
+
+.index {
+    height: 100vh;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.log-page {
+    height: 100vh;
+    .niz-logo {
+        img {
+            margin-top: 74px;
+            margin-bottom: 54px;
+            width: 120px;
+        }
+    }
+    form {
+        position: relative;
+    }
+    .c-control {
+        font-family: "dinpro-Regular";
+        height: 60px;
+        border-radius: 5px;
+        box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+        background-color: #ffffff;
+        width: 100%;
+        padding-left: 54px;
+        margin-bottom: 8px;
+        border: none;
+        outline: none;
+    }
+    i {
+        position: absolute;
+        top: 14px;
+        left: 18px;
+        font-size: 30px;
+        letter-spacing: -1px;
+        color: rgb(56, 83, 128);
+        pointer-events: none;
+    }
+    i.lock {
+        top: 84px;
+    }
+    i.down{
+        left: 86%;
+    }
+    .c-pass {
+        height: 60px;
+        border-radius: 5px;
+        box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+        background-color: #ffffff;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding-left: 54px;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: rgb(56, 83, 128);
+        font-family: "dinpro-Regular";
+        margin-bottom: 44px;
+    }
+}
+
+button {
+    border-radius: 30px;
+    box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: rgb(56, 83, 128);
+    font-family: "dinpro-Bold";
+    padding: 20px 32px;
+}
+
+.logo-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    img {
+        width: 38px;
+    }
+}
+
+.content {
+    margin-top: 14px;
+}
+
+.hover {
+    text-decoration: none !important;
+    &:hover {
+        .item-s {
+            background-color: #d8d8d8;
+        }
+    }
+    .item-s {
+        padding: 10px 12px;
+        border-radius: 3px;
+        box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+        background-color: #ffffff;
+        transition: all .4s ease-in-out;
+        margin-bottom: 6px;
+        .seans {
+            font-size: 18px;
+            letter-spacing: 0px;
+            color: rgb(56, 83, 128);
+            font-family: "dinpro-Bold";
+            margin-bottom: 5px;
+        }
+        .lang {
+            font-size: 16px;
+            letter-spacing: 0px;
+            color: rgb(153, 153, 153);
+            font-family: "dinpro-Regular";
+        }
+        .date {
+            font-size: 14px;
+            letter-spacing: 0px;
+            color: rgb(56, 83, 128);
+            font-family: "dinpro-Bold";
+            margin-bottom: 8px;
+        }
+        .time {
+            margin-bottom: 8px;
+            span {
+                font-size: 16px;
+                font-family: "dinpro-Bold";
+                letter-spacing: 0px;
+                color: rgb(56, 83, 128);
+                border-radius: 5px;
+                background-color: transparent;
+                border: 2px solid #37537f;
+                padding: 2px;
+            }
+        }
+        .zal {
+            font-size: 16px;
+            letter-spacing: 0px;
+            color: rgb(153, 153, 153);
+            font-family: "dinpro-Bold";
+        }
+    }
+}
+
+.seans-detal {
+    margin-bottom: 23px;
+}
+
+.margin-b40 {
+    margin-bottom: 40px;
+}
+
+.item {
+    height: 252px;
+    border-radius: 3px;
+    box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+    background-color: #ffffff;
+    margin-top: 32px;
+    padding: 0 16px;
+    .title {
+        p {
+            font-size: 18px;
+            letter-spacing: 0px;
+            color: rgb(56, 83, 128);
+            font-family: "dinpro-Bold";
+            padding: 22px 0;
+        }
+    }
+    .seans_info {
+        border-bottom: 1px solid #38537f;
+        margin-bottom: 16px;
+        p {
+            font-size: 18px;
+            letter-spacing: 0px;
+            color: rgb(56, 83, 128);
+            font-family: "dinpro-Bold";
+            margin-bottom: 16px;
+            span {
+                float: right;
+            }
+        }
+    }
+}
+
+.info {
+    margin-top: 42px;
+    border-radius: 3px;
+    box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+    background-color: #ffffff;
+    padding: 42px 0;
+    margin-bottom: 100px;
+    ul {
+        list-style: none;
+        li {
+            font-family: "dinpro-Bold";
+            font-size: 20px;
+            letter-spacing: 0px;
+            color: rgb(102, 102, 102);
+            margin-bottom: 8px;
+            span {
+                font-family: "dinpro-Regular";
+            }
+        }
+    }
+}
+
+.ticket {
+    margin-top: 18px;
+    background-color: #ffffff;
+    padding: 8px 8px 16px 8px;
+    border-radius: 5px;
+    position: relative;
+    .back {
+        background-image: url(../img/border.png), url(../img/border.png);
+        background-position: top, bottom;
+        background-repeat: no-repeat, no-repeat;
+        width: 100%;
+        height: 102.3%;
+        position: absolute;
+        top: -4px;
+        left: 0;
+        background-size: contain;
+        opacity: 1;
+    }
+    .n-logo {
+        text-align: center;
+        margin-bottom: 10px;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 83px;
+            right: 42px;
+            height: 1px;
+            top: 34px;
+            background-color: #000000;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 83px;
+            left: 42px;
+            height: 1px;
+            top: 34px;
+            background-color: #000000;
+        }
+        img {
+            width: 52px;
+        }
+    }
+    .bar_code {
+        border-bottom: 1px solid #000000;
+        img {
+            width: 46px;
+            margin-bottom: 10px
+        }
+    }
+    .film_info {
+        margin-top: 12px;
+        padding: 0px 50px;
+        .tick_num {
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            font-family: "dinpro-Regular";
+            margin-bottom: 12px;
+            span {
+                margin-left: 2px;
+            }
+        }
+        .film {
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            font-family: "dinpro-Bold";
+            margin-bottom: 16px;
+        }
+        .time {
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            font-family: "dinpro-Regular";
+            margin-bottom: 8px;
+            span {
+                margin-left: 2px;
+            }
+        }
+        .place {
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            font-family: "dinpro-Regular";
+            margin-bottom: 2px;
+            span {
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+        }
+        .date {
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            font-family: "dinpro-Regular";
+            margin-bottom: 8px;
+            span {
+                margin-left: 2px;
+            }
+        }
+        .price {
+            font-family: "dinpro-Bold";
+            color: rgb(0, 0, 0);
+            margin-bottom: 10px;
+            span {
+                font-size: 30px;
+                line-height: 36px;
+                color: rgb(0, 0, 0);
+            }
+        }
+        .adress {
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            font-family: "dinpro-Regular";
+            margin-bottom: 2px;
+            span {
+                margin-left: 2px;
+            }
+        }
+        .number {
+            font-size: 10px;
+            color: rgb(0, 0, 0);
+            font-family: "dinpro-Regular";
+        }
+    }
+}
+
+.test {
+    .title {
+        margin-top: 40px;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: rgb(255, 255, 255);
+        font-family: "dinpro-Bold";
+        margin-bottom: 10px;
+    }
+}
+
+.first {
+    margin-bottom: 100px;
+}
+
+.scan_et {
+    background-color: #fdbb03;
+    color: white;
+}
+
+.myPinCode {
+    margin-bottom: 26px;
+    input {
+        width: 37px;
+        height: 42px;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2.007px 2.229px 4px rgba(34, 34, 34, 0.25);
+        background-color: rgba(255, 255, 255, 0.14901960784313725);
+        border: 2px solid #e5e5e5;
+        font-size: 24px;
+        letter-spacing: 0px;
+        font-family: "dinpro-Bold";
+        color: rgb(255, 255, 255);
+    }
+}
+
+.list {
+    margin-top: 180px;
+    height: 100vh;
+    li{
+        margin-bottom: 22px;
+    }
+    a {
+        text-decoration: none;
+        font-size: 36px;
+        letter-spacing: 0px;
+        color: #385380;
+        font-family: "dinpro-Bold";
+    }
+}
